@@ -14,15 +14,15 @@ const Hero = () => {
           </p>
           
           <div className="hero-stats">
-            <div className="stat">
+            <div className="stat-card">
               <div className="stat-number">2</div>
               <div className="stat-label">AI Agents</div>
             </div>
-            <div className="stat">
+            <div className="stat-card">
               <div className="stat-number">15+</div>
               <div className="stat-label">GitHub Issues</div>
             </div>
-            <div className="stat">
+            <div className="stat-card">
               <div className="stat-number">30+</div>
               <div className="stat-label">PRs Generated</div>
             </div>

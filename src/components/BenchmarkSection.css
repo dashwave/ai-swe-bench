@@ -75,11 +75,25 @@
 /* Benchmark Table */
 .benchmark-table-container {
   overflow-x: auto;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  border-radius: 8px;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-scroll-note {
+  /* background-color: #f8f9fa; */
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  min-width: 1400px; /* Match the table's minimum width */
+  width: 100%;
+}
+
+.table-scroll-note p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .benchmark-table {
