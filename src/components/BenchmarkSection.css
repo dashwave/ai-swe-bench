@@ -1,0 +1,533 @@
+/* Tech Stack Tabs */
+.tech-stack-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 300;
+  color: #666;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tab-button:hover:not(.coming-soon) {
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.tab-button.active {
+  border-color: #0066cc;
+  background: #0066cc;
+  color: white;
+}
+
+.tab-button.coming-soon {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background: #f8f9fa;
+  border-color: #e0e0e0;
+  color: #999;
+}
+
+.tab-button.coming-soon:hover {
+  border-color: #e0e0e0;
+  color: #999;
+  background: #f8f9fa;
+}
+
+.tab-icon {
+  font-size: 1.2rem;
+}
+
+.tab-name {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.coming-soon-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ffc107;
+  color: #212529;
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Benchmark Table */
+.benchmark-table-container {
+  overflow-x: auto;
+  margin-bottom: 3rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benchmark-table {
+  width: 100%;
+  min-width: 1400px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.benchmark-table th {
+  background: #f8f9fa;
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-weight: 400;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e0e0e0;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.benchmark-table td {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+  font-weight: 300;
+}
+
+.benchmark-table tr:hover {
+  background: #fafbfc;
+}
+
+.benchmark-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Repository Card Styling */
+.repo-cell {
+  min-width: 220px;
+  max-width: 250px;
+}
+
+.repo-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.repo-card:hover {
+  background: #f0f0f0;
+  border-color: #0066cc;
+}
+
+.repo-logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  border: 1px solid #e0e0e0;
+  flex-shrink: 0;
+}
+
+.repo-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.repo-name {
+  font-weight: 400;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.repo-url {
+  font-size: 0.75rem;
+  color: #0066cc;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+.repo-url:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* Issue Chip Styling */
+.issue-cell {
+  min-width: 280px;
+  max-width: 320px;
+}
+
+.issue-chip {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  max-width: 100%;
+}
+
+.issue-chip:hover {
+  border-color: #0066cc;
+  box-shadow: 0 2px 4px rgba(0, 102, 204, 0.1);
+}
+
+.issue-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.issue-icon {
+  font-size: 0.9rem;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.issue-chip a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  display: block;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.issue-chip a:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Issue Nature Badge */
+.issue-nature {
+  min-width: 140px;
+  max-width: 160px;
+}
+
+.nature-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #e0e0e0;
+  color: #666;
+}
+
+/* Specialty */
+.specialty {
+  font-weight: 400;
+  color: #1a1a1a;
+  min-width: 160px;
+  max-width: 180px;
+}
+
+/* Input Prompt */
+.input-prompt {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.prompt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prompt-text {
+  max-width: 100%;
+  color: #666;
+  line-height: 1.4;
+  cursor: help;
+  font-size: 0.8rem;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.prompt-toggle {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 0.75rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  align-self: flex-start;
+}
+
+.prompt-toggle:hover {
+  color: #004499;
+  text-decoration: none;
+}
+
+.prompt-toggle:focus {
+  outline: none;
+  color: #004499;
+}
+
+/* PR Cell Styling */
+.pr-cell {
+  min-width: 180px;
+  max-width: 200px;
+}
+
+.pr-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pr-info a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  background: #f0f8ff;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.pr-info a:hover {
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+}
+
+.no-pr {
+  color: #999;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.25rem 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.pr-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metric {
+  font-size: 0.75rem;
+  color: #666;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 300;
+}
+
+/* Agent-specific styling */
+.pr-cell.dashwave {
+  border-left: 3px solid #0066cc;
+  background: rgba(0, 102, 204, 0.02);
+}
+
+.pr-cell.jules {
+  border-left: 3px solid #4285f4;
+  background: rgba(66, 133, 244, 0.02);
+}
+
+.pr-cell.human {
+  border-left: 3px solid #28a745;
+  background: rgba(40, 167, 69, 0.02);
+}
+
+/* Badge Styling */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-success {
+  background: #28a745;
+  color: white;
+}
+
+.badge-warning {
+  background: #ffc107;
+  color: #212529;
+}
+
+.badge-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.badge-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.benchmark-note {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.benchmark-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .benchmark-table {
+    min-width: 1200px;
+  }
+  
+  .benchmark-table th,
+  .benchmark-table td {
+    padding: 1rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .input-prompt {
+    min-width: 250px;
+    max-width: 350px;
+  }
+  
+  .repo-cell {
+    min-width: 200px;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .benchmark-table {
+    min-width: 1000px;
+  }
+  
+  .input-prompt {
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+  .repo-cell {
+    min-width: 180px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+  
+  .coming-soon-badge {
+    top: -6px;
+    right: -6px;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.3rem;
+  }
+  
+  .benchmark-table-container {
+    font-size: 0.75rem;
+  }
+  
+  .benchmark-table th,
+  .benchmark-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .pr-info {
+    gap: 0.25rem;
+  }
+  
+  .metric {
+    font-size: 0.7rem;
+  }
+  
+  .input-prompt {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  
+  .repo-card {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  .repo-logo {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+  
+  .repo-name {
+    font-size: 0.8rem;
+  }
+  
+  .repo-url {
+    font-size: 0.7rem;
+  }
+  
+  .issue-header {
+    gap: 0.25rem;
+  }
+  
+  .issue-icon {
+    font-size: 0.8rem;
+  }
+}

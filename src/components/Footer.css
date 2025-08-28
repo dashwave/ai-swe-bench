@@ -1,0 +1,151 @@
+.footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 3rem 0 2rem;
+  border-top: 1px solid #333;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-section h4 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: color 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-section ul li a:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.sponsor-link {
+  color: #0066cc !important;
+  font-weight: 600;
+}
+
+.sponsor-link:hover {
+  color: #004499 !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #999;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-info p {
+  color: #666;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #0066cc;
+}
+
+.sponsor-note {
+  background: rgba(0, 102, 204, 0.1);
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.sponsor-note p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sponsor-note strong {
+  color: #0066cc;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
